@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     text-align: center;
@@ -34,5 +34,5 @@ h2 {
 }
 
 .gift {
-    height: 40vh;
+    height: 30vh;
 }
