@@ -17,6 +17,25 @@ const countdown = () => {
     document.querySelector('.hour').innerText = textHour;
     document.querySelector('.minute').innerText = textMinute;
     document.querySelector('.second').innerText = textSecond;
+    
+    if (textDay < 1) {
+        document.querySelector('#already').innerText = "Відкрий мене!";
+        document.querySelector('#already').disabled = false;
+    }
 };
 
 setInterval(countdown, 1000);
+
+// var alert1 = document.getElementById('alertdialog');
+// var ready = document.getElementById('already');
+
+function present() {
+    window.open();
+}
+// ready.addEventListener('click', function onOpen() {
+//     if (typeof alert1.showModal === "function") {
+//         alert1.showModal();
+//     } else {
+//         alert("The <dialog> API is not supported by this browser");
+//     }
+// });

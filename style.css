@@ -1,4 +1,5 @@
 body {
+    background: antiquewhite;
     font-family: Lato, serif;
     font-size: 1.2rem;
 }
@@ -9,7 +10,12 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
 
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-image: url("xmasslight.png");
 }
 
 h2 {
@@ -35,4 +41,19 @@ h2 {
 
 .gift {
     height: 30vh;
+}
+
+.ready {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.ready:hover {
+    background: #3d9641;
 }

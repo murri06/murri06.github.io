@@ -11,7 +11,9 @@
 
 </head>
 <body>
-
+    <div class="navbar">
+        <br>
+    </div>
 <section class="main">
     <div>
         <h2>День народження Христюшки через:</h2>
@@ -34,9 +36,18 @@
             <h3>Секунд</h3>
         </div>
     </div>
-    <img alt="gifts" class="gift"
+    <img alt="gifts" class="gift" onclick="present()"
          src="https://www.pngarts.com/files/8/Wrapped-Christmas-Gift-PNG-Transparent-Image-.png">
+    <button class="ready" disabled id="already" onclick="present()" type="button">Ти зможеш відкрити мене лише 30
+        числа!
+    </button>
 </section>
+<!--<dialog id="alertdialog">-->
+<!--    <form method="dialog">-->
+<!--        <img alt="present" height="600" src="#" width="300">-->
+<!--        <button value="cancel">Назад</button>-->
+<!--    </form>-->
+<!--</dialog>-->
 <script src="app.js"></script>
 </body>
 </html>
