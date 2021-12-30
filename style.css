@@ -25,6 +25,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .countdown {
     width: 50vh;
     display: flex;
@@ -56,4 +60,10 @@ h2 {
 
 .ready:hover {
     background: #3d9641;
+}
+
+.footer {
+    color: gray;
+    font-size: 1rem;
+    font-family: Jokerman, serif;
 }
