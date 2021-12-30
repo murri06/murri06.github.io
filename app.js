@@ -2,6 +2,7 @@ const countdown = () => {
     const countDate = new Date("January 01, 2022 00:00:00").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
+    let already = document.querySelector('#already');
 
     const second = 1000;
     const minute = second * 60;
@@ -18,12 +19,11 @@ const countdown = () => {
         document.querySelector('.hour').innerText = textHour;
         document.querySelector('.minute').innerText = textMinute;
         document.querySelector('.second').innerText = textSecond;
+    } else {
+        already.innerText = "Відкрий мене!";
+        already.disabled = false;
     }
     
-    if (textDay < 1) {
-        document.querySelector('#already').innerText = "Відкрий мене!";
-        document.querySelector('#already').disabled = false;
-    }
     if (textDay === 1) {
         document.querySelector('.dnes').innerText = "День";
     }
