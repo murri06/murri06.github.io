@@ -20,6 +20,7 @@ const countdown = () => {
         document.querySelector('.minute').innerText = textMinute;
         document.querySelector('.second').innerText = textSecond;
     } else {
+        document.querySelector('.hooray').innerText = 'Вітаю, моє маленьке сонечко!!!';
         already.innerText = "Відкрий мене!";
         already.disabled = false;
     }
@@ -27,9 +28,9 @@ const countdown = () => {
     if (textDay === 1) {
         document.querySelector('.dnes').innerText = "День";
     }
-    if (textDay === 2 || textDay === 3 || textDay === 4) {
+    else if (textDay === 2 || textDay === 3 || textDay === 4) {
         document.querySelector('.dnes').innerText = "Дні";
-    } else
+    } else 
         document.querySelector('.dnes').innerText = "Днів";
 };
 
