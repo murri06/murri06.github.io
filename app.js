@@ -31,7 +31,7 @@ const countdown = () => {
     else if (textDay === 2 || textDay === 3 || textDay === 4) {
         document.querySelector('.dnes').innerText = "Дні";
     } else 
-        document.querySelector('.dnes').innerText = "Днів";
+        document.querySelector('.dnes').innerText = "Днiв";
 };
 
 setInterval(countdown, 1000);
