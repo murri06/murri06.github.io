@@ -1,5 +1,5 @@
 const countdown = () => {
-    const countDate = new Date("January 01, 2022 00:00:00").getTime();
+    const countDate = new Date("January 01, 2023 00:00:00").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
     let already = document.querySelector('#already');
@@ -24,18 +24,39 @@ const countdown = () => {
         already.innerText = "Відкрий мене!";
         already.disabled = false;
     }
-    
+
     if (textDay === 1) {
-        document.querySelector('.dnes').innerText = "День";
-    }
-    else if (textDay === 2 || textDay === 3 || textDay === 4) {
-        document.querySelector('.dnes').innerText = "Дні";
-    } else 
-        document.querySelector('.dnes').innerText = "Днiв";
+        document.querySelector('.day-label').innerText = "День";
+    } else if (textDay === 2 || textDay === 3 || textDay === 4) {
+        document.querySelector('.day-label').innerText = "Дні";
+    } else
+        document.querySelector('.day-label').innerText = "Днів";
+    
+    if (textHour === 1) {
+        document.querySelector('.hour-label').innerText = "Година";
+    } else if (textHour === 2 || textHour === 3 || textHour === 4) {
+        document.querySelector('.hour-label').innerText = "Години";
+    } else
+        document.querySelector('.hour-label').innerText = "Годин";
+
+    if (textMinute === 1) {
+        document.querySelector('.minute-label').innerText = "Хвилина";
+    } else if (textMinute === 2 || textMinute === 3 || textMinute === 4) {
+        document.querySelector('.minute-label').innerText = "Хвилини";
+    } else
+        document.querySelector('.minute-label').innerText = "Хвилин";
+
+
+    if (textSecond === 1) {
+        document.querySelector('.second-label').innerText = "Секунда";
+    } else if (textSecond === 2 || textSecond === 3 || textSecond === 4) {
+        document.querySelector('.second-label').innerText = "Секунди";
+    } else
+        document.querySelector('.second-label').innerText = "Секунд";
 };
 
 setInterval(countdown, 1000);
 
 function present() {
-    window.open('https://sale.karabas.com/b5f556e4256cc27ab4137b41e9f1094a3373da71ab8f63473b56ad2dd246393c.ticket');
+    alert("Hello world!");
 }

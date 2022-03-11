@@ -6,7 +6,7 @@ body {
 
 .main {
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@ h3 {
 }
 
 .countdown {
-    width: 50vh;
+    width: 60vh;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -60,10 +60,4 @@ h3 {
 
 .ready:hover {
     background: #3d9641;
-}
-
-.footer {
-    color: gray;
-    font-size: 1rem;
-    font-family: Jokerman, serif;
 }
